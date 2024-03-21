@@ -28,7 +28,7 @@ body {
 /* Grid layout for shopping articles in main */
 main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   justify-content: space-around;
 }
@@ -282,4 +282,27 @@ main {
 
 .option-6:hover {
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 980px) {
+  .article-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .article-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .article-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 }
